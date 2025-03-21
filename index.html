@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Naganathan Perumal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #6aeaee;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0048a7;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .profile-picture {
+            width: 130px;
+            height: 130px;
+            border-radius: 80%;
+            object-fit: cover;
+            border: 5px solid #92f3de;
+            position: absolute;
+            top: 45px;
+            right: 155px;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-content h2 {
+            margin-top: 0;
+            color: #941919;
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .profile-picture {
+                position: static;
+                margin-bottom: 1rem;
+            }
+
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="c:\Users\ELCOT\Pictures\New folder\naga\IMG_20230819_152624_951.jpg" alt="Profile Photo" class="profile-picture">
+            <h1 style="color:rgb(0, 255, 255);">Naganathan Perumal</h1>
+            <p>Bachelor of Computer Application (B.C.A)</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificate">Certificate</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm Naganatha Perumal from the
+                course of computer application.I am
+                interest in working tech field.I have
+                strong problem solving skills and
+                effective communication skills
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p><strong>Swami Dayananda College</strong></p>
+            <p>Bachelor of Computer Application (B.C.A)</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>C Programming</li>
+                <li>Python Programming</li>
+                <li>MySQL Database </li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Simple Billing System:</strong> A console-based application developed using C programming to manage billing for small businesses.</li>
+                <li><strong>Portfolio Website:</strong> A personal portfolio website built using HTML, CSS, and JavaScript to showcase my skills and projects.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="Certificate">
+        <div class="section-content">
+            <h2>Certificate</h2>
+            <ul>
+               <li><a href="C:\Users\ELCOT\Pictures\New folder" target="_blank" class="download-button">Certificate</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="resume">
+        <div class="section-content">
+            <h2>Resume</h2>
+            <p>Download my resume to learn more about my qualifications and experience.</p>
+            <a href="C:\Users\ELCOT\Pictures\New folder" target="_blank" class="download-button">Download Resume</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Naganathan Perumal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 60, // Adjusted for fixed header
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
